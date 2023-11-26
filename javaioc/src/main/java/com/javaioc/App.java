@@ -1,5 +1,6 @@
 package com.javaioc;
 
+import com.javaioc.interfaces.IComplexObject;
 import com.javaioc.interfaces.IServiceCollection;
 import com.javaioc.interfaces.ISimpleObject;
 

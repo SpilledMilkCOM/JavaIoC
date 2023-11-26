@@ -1,20 +1,18 @@
 package com.javaioc;
 
 import java.util.UUID;
-import com.javaioc.interfaces.IComplexObject;
+
 import com.javaioc.interfaces.ISimpleObject;
 
 /**
  *
  */
-public class ComplexObject implements IComplexObject {
+public class SimpleObject2 implements ISimpleObject {
 
     private final UUID _id;
-    private final ISimpleObject _service;
 
-    public ComplexObject(ISimpleObject service) {
+    public SimpleObject2() {
         _id = UUID.randomUUID();
-        _service = service;
     }
 
     @Override
@@ -24,6 +22,6 @@ public class ComplexObject implements IComplexObject {
 
     @Override
     public String toString() {
-        return _id + "::" + _service.toString();
+       return _id.toString();
     }
 }

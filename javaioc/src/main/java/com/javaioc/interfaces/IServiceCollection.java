@@ -11,5 +11,5 @@ public interface IServiceCollection {
 
     <TInterfaceType, TClassType> IServiceCollection addTransient(Class<TInterfaceType> iface, Class<TClassType> clazz);
 
-    Object getService(Class<?> iface);
+    <TInterfaceType> TInterfaceType getService(Class<TInterfaceType> iface);
 }
